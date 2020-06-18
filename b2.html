@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>in mảng đảo ngược</title>
+</head>
+<body>
+<script>
+    let array = [];
+    let length = +prompt("Nhap do dai cua mang:");
+    for (let i=0; i<length; i++) {
+        array[i] = +prompt("Nhap cac phan tu của mang: " + i);
+    }
+    document.write("mang ban dau la: " +array);
+    let arrayrev = array.reverse();
+    document.write("<br>mang dao nguoc la: " +arrayrev);
+</script>
+</body>
+</html>

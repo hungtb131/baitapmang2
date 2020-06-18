@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>display mảng 2 chiều</title>
+</head>
+<body>
+<script>
+    let a = [];
+    function inputArray() {
+        let cols, rows;
+        rows = +prompt("Nhap so hang trong mang");
+        cols = +prompt("Nhap so cot trong mang");
+        for (let i=0; i<rows; i++){
+            a[i] = new Array();
+            for (let j=0; j<cols; j++){
+                a[i][j] = Math.floor(Math.random()*100);
+            }
+        }
+    }
+
+    function displayArray() {
+        document.write("Cac phan tu trong mang la: " + "<br>");
+        for (let i =0; i <a.length; i++){
+            for (let j =0; j <a[i].length; j++){
+                document.write(a[i][j]+ " ");
+            }
+            document.write("<br>");
+        }
+    }
+    // let array2Dimen = new Array();
+    inputArray(a);
+    displayArray(a);
+</script>
+</body>
+</html>
